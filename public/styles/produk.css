@@ -1,0 +1,11 @@
+.produk {
+  background-color: var(--primary-color);
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.produk .section-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}

@@ -1,0 +1,125 @@
+.produk {
+  background-color: var(--white-brownish);
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.section-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: underline 3px;
+  text-underline-offset: 6px;
+  color: var(--primary-color);
+}
+
+.card-container {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  gap: 27px;
+
+  overflow-y: scroll;
+}
+
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 97%;
+
+  background-color: white;
+  border-radius: 32px;
+  padding: 30px;
+  box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.289);
+}
+
+.card-left-section {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.card-left-section img {
+  width: 100%;
+  object-fit: contain;
+  box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.267);
+}
+
+.card-right-section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.card-right-section .nama-produk {
+  color: var(--light-brown);
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.card-right-section hr {
+  width: 100%;
+  border: solid rgb(119, 49, 0);
+  border-radius: 4px;
+}
+
+.card-right-section .card-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-buttons .button-ubah-hapus {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 19px;
+  color: white;
+  margin-left: 20px;
+}
+
+.produk-bottom-section {
+  display: flex;
+  justify-content: end;
+  width: auto;
+}
+.produk-bottom-section button {
+  background-color: var(--primary-color);
+  padding: 8px 80px;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 19px;
+  color: white;
+}
+
+/* Track */
+.custom-scroll::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Light grey background */
+  border-radius: 10px;
+}
+
+/* Handle (Thumb) */
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #888; /* Dark grey handle */
+  border-radius: 10px;
+}
+
+/* Handle hover */
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker grey when hovered */
+}
+
+/* Scrollbar */
+.custom-scroll::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}

@@ -1,0 +1,13 @@
+.testimoni {
+  background-color: var(--white-brownish);
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.testimoni .section-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #58625C;
+  text-align: right;
+
+}

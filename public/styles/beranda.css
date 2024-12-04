@@ -1,0 +1,58 @@
+.beranda {
+  background-color: var( --white-brownish);
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.beranda .container { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  justify-content: space-between;
+
+}
+
+.left-section {
+  width: 55%;
+  padding-bottom: 200px;
+}
+
+.left-section .beranda-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.left-section .beranda-sub-title {
+  margin-top: -15px;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+
+.left-section .beranda-sub-title span {
+  color: var(--secondary-color);
+}
+
+.left-section .beranda-text {
+  letter-spacing: 0.2px;
+}
+
+.right-section {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  display: flex;
+
+
+}
+
+.right-section img {
+  width: 100%;
+  object-fit: contain;
+}

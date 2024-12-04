@@ -1,0 +1,44 @@
+.galeri {
+  background-color: var(--light-brown);
+  height: auto;
+  padding: 65px 0;
+}
+
+.galeri .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.galeri .section-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.galeri-text {
+  text-align: justify;
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.galeri-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+
+.galeri-image img {
+  height: 100%;
+  width: 32.6%;
+  object-fit: contain;
+}
