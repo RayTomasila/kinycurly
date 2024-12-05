@@ -23,10 +23,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/kinicurly/landing/';
+$config['base_url'] = 'http://localhost/kinycurly/landing/';
 
 $config['assets_produk'] = $_SERVER["DOCUMENT_ROOT"] . "/kukos/public/assets/produk";
-$config['url_produk'] = 'http://localhost/kinicurly/public/assets/produk';
+$config['url_produk'] = 'http://localhost/kinycurly/public/assets/produk';
 /*
 |--------------------------------------------------------------------------
 | Index File

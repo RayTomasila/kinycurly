@@ -24,13 +24,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://localhost/kinicurly/admin/';
+$config['base_url'] = 'http://localhost/kinycurly/admin/';
 
-$config['assets_admin'] = $_SERVER["DOCUMENT_ROOT"] . "/kinicurly/public/assets/admin/";
-$config['url_admin'] = 'http://localhost/kinicurly/public/assets/admin/';
+$config['assets_admin'] = $_SERVER["DOCUMENT_ROOT"] . "/kinycurly/public/assets/admin/";
+$config['url_admin'] = 'http://localhost/kinycurly/public/assets/admin/';
 
-$config['assets_produk'] = $_SERVER["DOCUMENT_ROOT"] . "/kinicurly/public/assets/produk/";
-$config['url_produk'] = 'http://localhost/kinicurly/public/assets/produk/';
+$config['assets_produk'] = $_SERVER["DOCUMENT_ROOT"] . "/kinycurly/public/assets/produk/";
+$config['url_produk'] = 'http://localhost/kinycurly/public/assets/produk/';
 
 
 
