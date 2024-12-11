@@ -44,7 +44,7 @@ $config['url_produk'] = 'http://localhost/kinycurly/public/assets/produk/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
