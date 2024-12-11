@@ -37,6 +37,10 @@
 
     <!-- CSS Styles -->
 
+    <!-- JS Script -->
+     <script href="../public/script/admin.js"></script>
+    <!-- JS Script -->
+
   </head>
   <body>
 

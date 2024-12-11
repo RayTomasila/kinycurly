@@ -22,7 +22,7 @@
 
 				if ($output=="ada") {
 					$this->session->set_flashdata('pesan_sukses','Berhasil Login');
-					redirect('produk_tampil','refresh');
+					redirect('produk','refresh');
 
 				} else {
 					$this->session->set_flashdata('pesan_gagal','Gagal Login');
