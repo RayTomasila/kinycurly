@@ -1,5 +1,5 @@
 <!-- Produk -->
-<section class="produk container">
+<section class="produk-fak container">
 
     <p class="section-title">Produk</p>
     
@@ -38,7 +38,5 @@
           <button class="button-ubah-hapus">TAMBAH</button>
         </a>
       </div>
-
-
 </section>
 

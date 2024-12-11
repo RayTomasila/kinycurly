@@ -21,7 +21,7 @@
 
         $this->load->view('header');
         $this->load->view('navbar', $data);
-        $this->load->view('produk', $data);
+        $this->load->view('produk_tampil', $data);
         $this->load->view('footer');
     }
 
@@ -35,7 +35,7 @@
       if ($inputan) {
         $this->Mproduk->tambah($inputan);
         $this->session->set_flashdata('pesan_sukses', 'Produk Berhasil Ditambah!');
-        redirect('produk', 'refresh');     
+        redirect('produk_tampil', 'refresh');     
       }
 
       $this->load->view('header');
@@ -49,7 +49,7 @@
       $this->Mproduk->hapus($id_produk);
       
       $this->session->set_flashdata('pesan_sukses', 'Produk telah terhapus');
-      redirect('produk', 'refresh');
+      redirect('produk_tampil', 'refresh');
   }
 
 }
