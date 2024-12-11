@@ -77,3 +77,13 @@ ul{
   text-decoration: none;
 }
 
+
+.btn-bg-yellow {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 500;
+  color: white;
+  width: 250px;
+}
