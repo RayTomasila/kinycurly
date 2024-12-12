@@ -137,7 +137,19 @@
 <!-- Produk Section -->
   <section class="produk" id="produk">
     <div class="container">
-      <p class="section-title mt-3">Produk</p>
+      <p class="section-title">Produk</p>
+
+      <div class="produk-wrapper custom-scroll">
+        <?php foreach ($produk as $items): ?>
+          <div class="produk-img-container">
+            <img src="<?php echo $this->config->item("url_produk") . $items['foto_produk']?>" alt="">
+            <div class="produk-name">
+              <p><?php echo $items['nama_produk'] ?></p>
+            </div>
+          </div>
+        <?php endforeach ?>
+      </div>
+
     </div>
   </section>
 <!-- Produk Section -->
