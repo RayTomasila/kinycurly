@@ -27,6 +27,8 @@ $config['base_url'] = 'http://localhost/kinycurly/landing/';
 
 $config['assets_produk'] = $_SERVER["DOCUMENT_ROOT"] . "/kinycurly/public/assets/produk/";
 $config['url_produk'] = 'http://localhost/kinycurly/public/assets/produk/';
+] = 'http://localhost/kinycurly/public/assets/produk';
+
 /*
 |--------------------------------------------------------------------------
 | Index File
