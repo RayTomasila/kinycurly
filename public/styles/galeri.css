@@ -27,18 +27,60 @@
   color: white;
 }
 
-.galeri-image {
+.galeri-image-container {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 100%;
-  width: 100%;
+  gap: 10px;
 }
 
-
-.galeri-image img {
+.galeri-img-wrapper img {
+  width: 100%;
   height: 100%;
-  width: 32.6%;
   object-fit: contain;
 }
+
+/* MEDIA QUERIES */
+  /* PHONES */
+  @media screen and (min-width: 414px ) {
+    .galeri-img-wrapper {
+      width: 220px;
+      height: auto;
+    }    
+  }
+
+  /* IDK */
+  @media screen and (min-width: 576px ) {
+    .galeri-img-wrapper {
+      width: 100%;
+      height: auto;
+    }    
+  }
+
+  /* TABLET */
+  @media screen and (min-width: 768px ) {
+    .galeri-img-wrapper {
+      width: 305px;
+      height: auto;
+    }    
+  }
+
+  /* LAPTOPS */
+  @media screen and (min-width: 1204px ) {
+    .galeri-img-wrapper {
+      width: 365px;
+      height: auto;
+    }    
+  }
+
+  /* BIG SCREEN */
+  @media screen and (min-width: 1400px ) {
+    .galeri-img-wrapper {
+      width: 425px;
+      height: auto;
+    }    
+  }
+/* MEDIA QUERIES */

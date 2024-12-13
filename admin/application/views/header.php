@@ -7,6 +7,7 @@
     
     <!-- Bootstrap & JS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
     <!-- Bootstrap & JS -->
 
     <!-- Fonts -->
@@ -24,7 +25,7 @@
       </link>
 
       <link rel="stylesheet" type="text/css" 
-        href="<?php echo base_url('../public/styles/admin/produk.css') ?>">
+        href="<?php echo base_url('../public/styles/admin/produk-galeri.css') ?>">
       </link>
       
       <link rel="stylesheet" type="text/css" 
@@ -43,4 +44,3 @@
 
   </head>
   <body>
-

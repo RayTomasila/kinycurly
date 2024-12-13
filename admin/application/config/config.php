@@ -32,6 +32,9 @@ $config['url_admin'] = 'http://localhost/kinycurly/public/assets/admin/';
 $config['assets_produk'] = $_SERVER["DOCUMENT_ROOT"] . "/kinycurly/public/assets/produk/";
 $config['url_produk'] = 'http://localhost/kinycurly/public/assets/produk/';
 
+$config['assets_galeri'] = $_SERVER["DOCUMENT_ROOT"] . "/kinycurly/public/assets/galeri/";
+$config['url_galeri'] = 'http://localhost/kinycurly/public/assets/galeri/';
+
 
 
 /*

@@ -7,6 +7,7 @@
       $this->db->select('produk.*');
       $this->db->from('produk');
       $this->db->where('produk.id_admin', $id_admin);
+      $this->db->order_by('produk.id_produk', 'desc');
       
       $query = $this->db->get();
       $data = $query->result_array();

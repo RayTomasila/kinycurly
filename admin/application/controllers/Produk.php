@@ -19,7 +19,7 @@
         $data['produk'] = $this->Mproduk->tampil();
 
         $this->load->view('header');
-        $this->load->view('navbar', $data);
+        $this->load->view('sidebar', $data);
         $this->load->view('produk_tampil', $data);
         $this->load->view('footer');
       }
