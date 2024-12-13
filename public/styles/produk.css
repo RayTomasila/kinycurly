@@ -86,9 +86,14 @@
 
 /* Meadia Queries */
   /* PHONES */
-  @media screen and (min-width: 414px ) {
+  @media screen and (min-width: 370px){
     .produk-img-container {
       height: 300px;
+    }    
+  }
+  @media screen and (min-width: 412px){
+    .produk-img-container {
+      height: 340px;
     }    
   }
 
@@ -102,11 +107,18 @@
   /* TABLET */
   @media screen and (min-width: 768px ) {
     .produk-img-container {
-      height: 320px;
+      height: 370px;
     }    
   }
 
   /* LAPTOPS */
+
+  @media screen and (min-width: 1000px ) {
+    .produk-img-container {
+      height: 400px;
+    }    
+  }
+
   @media screen and (min-width: 1204px ) {
     .produk-img-container {
       height: 340px;
