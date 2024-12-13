@@ -1,7 +1,7 @@
 <!-- Produk -->
-<section class="produk-tampil-container container">
+<section class="tampil-container container">
 
-    <p class="section-title">Produk</p>
+    <p class="section-title"></p>
     
     <div class="card-container custom-scroll">
         <?php foreach ($produk as $key => $value): ?>
@@ -14,7 +14,7 @@
           </div>
           
           <div class="card-right-section">
-            <p class="nama-produk"><?php echo $value['nama_produk'] ?></p>
+            <p class="card-title"><?php echo $value['nama_produk'] ?></p>
             <hr>
 
             <div class="card-buttons">
@@ -33,7 +33,7 @@
 
       </div>
 
-      <div class="produk-bottom-section"> 
+      <div class="bottom-section"> 
         <a href="<?php echo base_url("produk/tambah") ?>">
           <button class="button-ubah-hapus">TAMBAH</button>
         </a>

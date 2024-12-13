@@ -98,7 +98,7 @@
       </div>
 
       <div class="right-section">
-        <img src="../public/assets/beranda-image.png" alt="">
+        <img src="../public/assets/landing/beranda-image.png" alt="">
       </div>  
     </div>
 
@@ -109,7 +109,7 @@
   <section class="about" id="about">
     <div class="container">
       <div class="about-top-section">      
-        <img src="../public/assets/about-image.png" alt="">
+        <img src="../public/assets/landing/about-image.png" alt="">
 
         <div class="about-top-right-section">
           <p class="about-title-tentang">Tentang Kami</p>
@@ -138,8 +138,8 @@
   <section class="produk" id="produk">
     <div class="container">
       <p class="section-title">Produk</p>
-
-      <div class="produk-wrapper custom-scroll">
+  
+      <div class="produk-grid-container custom-scroll">
         <?php foreach ($produk as $items): ?>
           <div class="produk-img-container">
             <img src="<?php echo $this->config->item("url_produk") . $items['foto_produk']?>" alt="">
@@ -148,7 +148,7 @@
             </div>
           </div>
         <?php endforeach ?>
-      </div>
+      </div>     
 
     </div>
   </section>
@@ -161,10 +161,12 @@
 
       <p class="galeri-text my-5">Di Kinycurly Jogja, kami berkomitmen untuk menghadirkan fashion anak yang tidak hanya stylish, tetapi juga nyaman dan berkualitas tinggi. Setiap koleksi kami dirancang dengan cinta, penuh perhatian terhadap detail, dan mengikuti tren terbaru, untuk memastikan si kecil selalu tampil percaya diri dan ceria. Kami percaya bahwa setiap anak berhak mendapatkan pakaian yang mencerminkan kepribadian unik mereka, sambil tetap memberikan kenyamanan sepanjang hari. Kinycurly hadir untuk menjadi pilihan utama para orang tua yang ingin memberikan yang terbaik bagi buah hati mereka.</p>
 
-      <div class="galeri-image">
-        <img src="../public/assets/galeri-image-1.png" alt="">
-        <img src="../public/assets/galeri-image-2.png" alt="">
-        <img src="../public/assets/galeri-image-3.png" alt="">
+      <div class="galeri-image-container">
+        <?php foreach ($galeri as $key => $value): ?>
+          <div class="galeri-img-wrapper">
+            <img src="<?php echo $this->config->item('url_galeri'). $value['foto_galeri'] ?>" alt="">
+          </div>
+        <?php endforeach ?>
       </div>
 
     </div>
@@ -193,22 +195,22 @@
           <p class="footer-section-title">Ikuti Kami</p>
           <ul class="social-media">
             <li>
-              <a href=""><img src="../public/assets/fb.png" alt="facebook">@KiniCurly</a>
+              <a href=""><img src="../public/assets/landing/fb.png" alt="facebook">@KiniCurly</a>
             </li>
             <li>
-              <a href=""><img src="../public/assets/gmail.png" alt="Gmail">kiny@gmail.com</a>
+              <a href=""><img src="../public/assets/landing/gmail.png" alt="Gmail">kiny@gmail.com</a>
             </li>
             <li>
-              <a href=""><img src="../public/assets/ig.png" alt="">@kinycurly</a>
+              <a href=""><img src="../public/assets/landing/ig.png" alt="">@kinycurly</a>
             </li>
             <li>
-              <a href=""><img src="../public/assets/path.png" alt="">Kinycurly</a>
+              <a href=""><img src="../public/assets/landing/path.png" alt="">Kinycurly</a>
             </li>
             <li>
-              <a href=""><img src="../public/assets/tiktok.png" alt="">kiny_curly</a>
+              <a href=""><img src="../public/assets/landing/tiktok.png" alt="">kiny_curly</a>
             </li>
             <li>
-              <a href=""><img src="../public/assets/wa.png" alt="">085342618391</a>
+              <a href=""><img src="../public/assets/landing/wa.png" alt="">085342618391</a>
             </li>
           </ul>
         </div>
@@ -232,13 +234,13 @@
         <div class="footer-bottom-right">
           <ul class="footer-bottom-links">
             <li>
-              <a href="">TERMS</a>
+              <a href="#">TERMS</a>
             </li>
             <li>
-              <a href="">PRIVACY</a>
+              <a href="#">PRIVACY</a>
             </li>
             <li>
-              <a href="">SITEMAP</a>
+              <a href="#">SITEMAP</a>
             </li>
           </ul>
         </div>

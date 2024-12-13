@@ -1,5 +1,5 @@
-<section class="produk-crud-container">
-  <div class="container produk-crud-wrapper">
+<section class="crud-container">
+  <div class="container crud-wrapper">
 
     <p class="section-title">Ubah Produk</p>
 
@@ -7,9 +7,9 @@
       <form method="post" enctype="multipart/form-data">
 
         <div class="form-wrapper-top">    
-          <div class="produk-foto">
+          <div class="ubah-foto-container">
             <label>Foto Produk</label>
-            <div class="produk-ubah-foto-border">
+            <div class="ubah-foto-border">
               <img src="<?php echo $this->config->item("url_produk") . $produk['foto_produk']; ?>">
             </div>      
 
@@ -19,7 +19,7 @@
             </div>
           </div>
 
-          <div class="produk-inputs-container">
+          <div class="inputs-container">
             <div class="">
               <label>Kategori Produk</label>
               <select class="form-control form-select" name="id_kategori">

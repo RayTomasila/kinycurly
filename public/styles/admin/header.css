@@ -18,7 +18,7 @@ body {
   justify-content: center;
 }
 
-.sidebar .navbar-nav {
+.sidebar .siderbar-nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +47,7 @@ body {
 
 .sidebar .nav-link {
   background-color: var(--light-brown);
-  color: #fff; 
+  color: #fff;
   font-weight: 600;
   text-align: center;
   height: 40px;
@@ -61,15 +61,17 @@ body {
   align-items: center;
 }
 
+/* Highlight when hovering */
 .sidebar .nav-link:hover {
-  background-color: #52525234;
+  background-color: #ffc0429e;
   color: #fff;
 }
 
 .sidebar .nav-link.active {
-  background-color: var(--secondary-color); 
-  color: #fff;
+  background-color: var(--secondary-color);
+  color: white;
 }
+
 
 .content {
   flex: 1;

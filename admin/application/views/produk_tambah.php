@@ -1,5 +1,5 @@
-<section class="produk-crud-container">
-  <div class="container produk-crud-wrapper">
+<section class="crud-container">
+  <div class="container crud-wrapper">
 
     <div class="container-top ">
       <p class="section-title">Tambah Produk</p>
@@ -9,7 +9,7 @@
       <form method="post" enctype="multipart/form-data">
         
         <div class="form-wrapper-top">   
-          <div class="produk-foto">
+          <div class="foto">
             <label>Foto Produk</label>
             <div class="custom-file-upload">
               <label for="foto_produk" class="btn-custom">Masukan Foto Produk</label>
@@ -17,7 +17,7 @@
             </div>
           </div>
 
-          <div class="produk-inputs-container">          
+          <div class="inputs-container">
             <div class="">
               <label>Kategori Produk</label>
               <select class="form-control form-select" name="id_kategori" >
