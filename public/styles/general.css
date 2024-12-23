@@ -14,7 +14,6 @@
   --footer-top: #916B55;
   --footer-bottom: #784C33;
   
-
   /* shadow */
   --shadow-1: 3px 3px 9px hsla(240, 14%, 69%, 0.2);
   --shadow-2: 3px 3px 9px hsla(204, 92%, 59%, 0.3);
@@ -55,9 +54,8 @@ html {
 
 body {
   font-family: 'Poppins';
-  margin-top: 60px; /* Same as the navbar's height */
+  margin-top: 60px; 
   overflow-x: hidden;
-
 }
 
 

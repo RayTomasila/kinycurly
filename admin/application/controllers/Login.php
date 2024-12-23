@@ -1,12 +1,8 @@
 <?php
 	class Login extends CI_Controller {
 
-		public function index()
-		{
-      
-      // i tried to but it didn't work
+		public function index() {    
       $this->load->library('form_validation');
-      
 
 			$inputan = $this->input->post();
 

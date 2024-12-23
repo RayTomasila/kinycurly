@@ -7,7 +7,7 @@
     align-items: flex-end;
     justify-content: center;
     overflow-y: auto; 
-    padding-top: 100px;
+    padding-top: 5%;
   }
 
   .crud-wrapper {
@@ -37,7 +37,8 @@
   }
 
   .form-container .inputs-container {
-    width: 60%;
+    width: 55%;
+    min-width: 300px;
   }
 
   .form-container .form-button {
@@ -56,6 +57,7 @@
 
   .form-container input, 
   .form-container select {
+    max-width: 100%;
     width: 100%;
     min-width: 300px;
     border: 2px solid var(--light-brown);
@@ -70,9 +72,7 @@
   }
 
   .form-container input:focus {
-    border-color: var(--dark-brown);
-    outline: none; 
-    box-shadow: 0 0 5px var(--dark-brown); 
+    outline: var(--secondary-color);
   }
 
   .form-container input:disabled {
@@ -219,32 +219,56 @@
 
 
 /* TAMBAH */
-  .custom-file-upload input[type="file"] {
-    display: none;
-  }
+.form-top-left-foto {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-width: 300px;
+  max-width: 30%;
+  gap: 12px;
+}
 
-  .custom-file-upload .btn-custom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
+.display-uploaded-foto {
+  min-width: 100%;
+  border: 2px solid var(--primary-color);
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+}
 
-    border: 2px solid var(--light-brown);  
-    border-radius: 15px;
+.custom-file-upload-container {
+  max-width: 100%;
+}
 
-    color: rgb(128, 128, 128);
-    font-size: 13px;
-    text-align: center;
-    padding: 10px 20px;
+input[type="file"] {
+  max-width: 100%;
+  width: 100%;
+  min-width: 300px;
+  cursor: pointer;
+  overflow: hidden;
+}
 
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+input[type="file"]::-webkit-file-upload-button {
+  max-width: 100%;
+  padding: 8px 12px;
+  background-color: var(--secondary-color); 
+  color: white;
+  border: none; 
+  border-radius: 12px;
+  
+  margin-right: 12px;
+  font-size: 14px; 
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
 
-  .custom-file-upload .btn-custom:hover {
-    background-color: rgba(118, 118, 118, 0.043)
-  }
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #eaac2e;
+}
+
+input[type="file"]::-webkit-file-upload-button:focus {
+  outline: var(--secondary-color);
+}
 
 /* TAMBAH */
 
@@ -300,3 +324,38 @@
   }
 /* UBAH */
 
+/* Media Queries */
+@media screen and (max-width: 420px) {
+  .crud-container {
+    padding-top: 12%;
+  }
+
+  .crud-wrapper {
+    padding: 5%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-wrapper-top {
+    min-width: 100%;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-container .inputs-container {
+    width: 100%;
+  }
+
+  .form-top-left-foto {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .crud-button-container button {
+    width: 100%;
+    margin: 0;
+  }
+}
