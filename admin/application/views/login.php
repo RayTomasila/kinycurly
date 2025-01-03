@@ -52,7 +52,7 @@
 </section>
 
 <!-- Footer -->
-  <footer class="footer-bottom ">
+  <footer class="footer-bottom">
     <div class="footer-container">
       <div class="footer-bottom-left">
         <p>Copyright NETRA.ID</p>
