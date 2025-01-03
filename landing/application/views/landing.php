@@ -243,7 +243,7 @@
           </div>
 
           <div class="footer-top-mid">
-            <p class="footer-section-title-landing">Ikuti Kami</p>
+            <p class="footer-section-title">Ikuti Kami</p>
             <ul class="social-media">
               <li>
                 <a href=""><img src="../public/assets/landing/fb.png" alt="facebook">@KiniCurly</a>
@@ -267,7 +267,7 @@
           </div>
 
           <div class="footer-top-right">
-            <p class="footer-section-title-landing">Alamat</p>
+            <p class="footer-section-title">Alamat</p>
             <p class="footer-section-content">jl. Gito gati Ds. Tambakrejo Sariharjo, Ngaglik, Sleman</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.9311276288813!2d110.32377299999999!3d-7.6905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5f05882a520b%3A0x89eff82d75a7d6ac!2sKinycurly!5e0!3m2!1sen!2sid!4v1733279406072!5m2!1sen!2sid" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-3"></iframe>
           </div>

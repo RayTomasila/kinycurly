@@ -112,6 +112,11 @@ h1 {
   text-align: center;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 label {
   color: white;
   font-weight: 600;
@@ -152,8 +157,8 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
+  align-items: bottom;
+  padding: 25px 0;
 }
 
 .footer-bottom-left p {
@@ -175,5 +180,10 @@ label {
 
 .footer-bottom-links li {
   margin-left: 18px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 /* FOOTER */
