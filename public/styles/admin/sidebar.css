@@ -6,36 +6,33 @@ body {
 
 .sidebar {
   z-index: 999;
-  width: 20vw;
+  width: 16vw;
+  max-width: 20vw;
   color: #fff;
   flex-shrink: 0;
   height: 100vh;
   position: sticky;
   top: 0;
-  padding: 10px;
+  padding: 20px;
   background-color: var(--primary-color); 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
-}
-
-.sidebar .siderbar-nav {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .sidebar ul {
   padding-left: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.sidebar li.nav-item {
+.sidebar li.nav-item,
+.sidebar li.logout {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .sidebar .admin-akun {
@@ -45,7 +42,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
   color: #fff; 
   font-weight: 700;
 }
@@ -65,7 +61,6 @@ body {
   text-align: center;
   height: 40px;
   width: 100%;
-  margin-bottom: 50px;
   text-decoration: none;
   border-radius: 30px;
   display: flex;

@@ -9,10 +9,13 @@
 			if (!$this->session->userdata("id_admin")) {
 					redirect('/','refresh');
 			}	
+
+      $this->load->model('Madmin');
 		}
 
-		public function index()
-		{
+		public function index() {
+      $data['admin'] = $this->Madmin->tampil($this->session->userdata('id_admin'));
+
 			$inputan = $this->input->post();
 
 			$this->form_validation->set_rules("username","Username","required");
@@ -22,15 +25,14 @@
 
 			if ($this->form_validation->run()==TRUE) {
 
-				$this->load->model('Madmin');
 				$id_admin = $this->session->userdata("id_admin");
 				$this->Madmin->ubah($inputan,$id_admin);
 
-				$this->session->set_flashdata('pesan_sukses','Akun telah diubah');
-				redirect('home','refresh');
+				$this->session->set_flashdata('pesan_sukses','Akun Berhasil Diubah');
+				redirect('produk','refresh');
 			}
 			$this->load->view('header');
-			$this->load->view('akun');
+			$this->load->view('akun', $data);
 			$this->load->view('footer');
 		}
 	}

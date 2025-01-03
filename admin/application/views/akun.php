@@ -1,35 +1,49 @@
-<div class="container mt-5">
-  <h5 class="mb-4">Ubah Akun</h5>
+<section class="crud-container">
+  <div class="container crud-wrapper">
+    <p class="section-title">Ubah Akun</p>
 
-  <div class="row justify-content-center">
-    <div class="col-md-6 col-lg-4">
-      <form method="post">
-        
-        <!-- Username -->
-        <div class="mb-3">
-          <label for="username" class="form-label">Username</label>
-          <input type="text" id="username" name="username" class="form-control" value="<?php echo set_value("username", $this->session->userdata("username")) ?>">
-          <span class="text-danger small"><?php echo form_error("username") ?></span>
+    <div class="form-container">
+      <form method="post" enctype="multipart/form-data">
+
+        <div class="form-wrapper-top">    
+          <div class="ubah-foto-container">
+            <label>Foto </label>
+            <div class="ubah-foto-border">
+              <img src="<?php echo $this->config->item("url_admin") . $admin['foto_admin']; ?>"></img>
+          </div>      
+
+          <div class="custom-file-upload-container">
+            <label for="foto_admin" class="btn-custom">Masukan Foto baru</label>
+            <input type="file" id="foto_admin" name="foto_admin" class="form-control">
+          </div>
+         </div>
+
+          <div class="inputs-container">
+            <div>            
+              <label for="username" class="form-label">Username</label>
+              <input type="text" id="username" name="username" class="form-control" value="<?php echo set_value("username", $this->session->userdata("username")) ?>">
+              <span class="text-danger small"><?php echo form_error("username") ?></span>
+            </div>
+
+            <div>
+              <label for="password" class="form-label">Password</label>
+              <input type="password" id="password" name="password" class="form-control" placeholder="Kosongkan jika Password tidak diubah">
+            </div>
+
+            <div>
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" id="nama" name="nama" class="form-control" value="<?php echo set_value("nama", $this->session->userdata("nama")) ?>">
+              <span class="small text-danger"><?php echo form_error("nama") ?></span>
+            </div>
+          </div>
+      </div>
+
+
+        <div class="form-button">
+          <button type="submit" class="btn-bg-yellow mt-3">Simpan</button>
         </div>
-
-        <!-- Password -->
-        <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input type="password" id="password" name="password" class="form-control">
-          <p class="text-muted">Kosongkan jika Password tidak diubah</p>
-        </div>
-
-        <!-- Nama Lengkap -->
-        <div class="mb-3">
-          <label for="nama" class="form-label">Nama Lengkap</label>
-          <input type="text" id="nama" name="nama" class="form-control" value="<?php echo set_value("nama", $this->session->userdata("nama")) ?>">
-          <span class="small text-danger"><?php echo form_error("nama") ?></span>
-        </div>
-
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary w-100" style="background-color: #93d56b; border-color: #93d56b; color: white;">Ubah Akun</button>
-
       </form>
+
     </div>
   </div>
-</div>
+</section>

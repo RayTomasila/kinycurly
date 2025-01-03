@@ -1,7 +1,7 @@
 <section class="crud-container">
   <div class="container crud-wrapper">
 
-    <p class="section-title">Ubah </p>
+    <p class="section-title">Ubah galeri</p>
 
     <div class="form-container">
       <form method="post" enctype="multipart/form-data">

@@ -35,6 +35,9 @@ $config['url_produk'] = 'http://localhost/kinycurly/public/assets/produk/';
 $config['assets_galeri'] = $_SERVER["DOCUMENT_ROOT"] . "/kinycurly/public/assets/galeri/";
 $config['url_galeri'] = 'http://localhost/kinycurly/public/assets/galeri/';
 
+$config['assets_testimoni'] = $_SERVER["DOCUMENT_ROOT"] . "/kinycurly/public/assets/testimoni/";
+$config['url_testimoni'] = 'http://localhost/kinycurly/public/assets/testimoni/';
+
 
 
 /*
