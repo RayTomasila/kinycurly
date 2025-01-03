@@ -13,7 +13,7 @@
               <img src="<?php echo $this->config->item("url_produk") . $produk['foto_produk']; ?>">
             </div>      
 
-            <div class="custom-file-edit">
+            <div class="custom-file-upload-container">
               <label for="foto_produk" class="btn-custom">Masukan Foto baru</label>
               <input type="file" id="foto_produk" name="foto_produk" class="form-control">
             </div>

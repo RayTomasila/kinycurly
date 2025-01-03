@@ -1,6 +1,6 @@
 <!-- Galeri -->
 <section class="tampil-container container">
-  <p class="section-title"></p>
+  <p class="section-title">Galeri</p>
   
   <div class="card-container custom-scroll">
       <?php foreach ($galeri as $key => $value): ?>

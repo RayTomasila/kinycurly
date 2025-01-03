@@ -1,12 +1,10 @@
 <?php 
   class Mkategori extends CI_Model {
     
-    function tampil() {
-      $query = $this->db->get('kategori');
-      $data = $query->result_array();
+    public function tampil() {
+      $q = $this->db->get('kategori');
 
-      return $data;
-      
+      return $q->result_array();
     }
   }
 ?>

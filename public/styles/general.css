@@ -13,8 +13,8 @@
   --light-brown: #C2977E;
   --footer-top: #916B55;
   --footer-bottom: #784C33;
+  --text-color: #58625C;
   
-
   /* shadow */
   --shadow-1: 3px 3px 9px hsla(240, 14%, 69%, 0.2);
   --shadow-2: 3px 3px 9px hsla(204, 92%, 59%, 0.3);
@@ -55,9 +55,8 @@ html {
 
 body {
   font-family: 'Poppins';
-  margin-top: 60px; /* Same as the navbar's height */
+  margin-top: 60px; 
   overflow-x: hidden;
-
 }
 
 
@@ -77,7 +76,6 @@ ul{
   text-decoration: none;
 }
 
-
 .btn-bg-yellow {
   padding: 10px 20px;
   background-color: var(--secondary-color);
@@ -85,5 +83,55 @@ ul{
   border-radius: 40px;
   font-weight: 500;
   color: white;
-  width: 300px;
+  width: 340px;
+}
+
+.btn-bg-yellow-landing {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 17px;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: var(--secondary-color);
+  box-shadow: 2px 2px 5px rgba(46, 46, 46, 0.159);
+  transition: box-shadow 0.3s ease;
+
+}
+
+.btn-bg-yellow-landing:hover {
+  box-shadow: 2px 2px 7px rgba(46, 46, 46, 0.283);
+}
+
+.btn-bg-yellow-landing span {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 10px 25px;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(250, 250, 250);
+  transition: color 0.3s ease;
+}
+
+.btn-bg-yellow-landing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: left 0.6s ease;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.176);
+  background-color: var(--primary-color);
+}
+
+.btn-bg-yellow-landing:hover::before {
+  left: 0;
+}
+
+.btn-bg-yellow-landing:hover span {
+  box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.176);
+  color: white;
 }

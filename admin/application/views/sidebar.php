@@ -35,11 +35,15 @@
       </a>
     </li>
 
-    <li class="nav-item">
+  </ul>
+
+
+    <li class="nav-item logout">
       <a href="<?php echo base_url("logout") ?>" class="nav-link <?php echo (current_url() == base_url("logout") ? 'active' : ''); ?>">
         LOGOUT
       </a>
     </li>
-  </ul>
+
+
 </div>
 <!-- Sidebar -->

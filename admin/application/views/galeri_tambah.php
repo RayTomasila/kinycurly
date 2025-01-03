@@ -9,13 +9,17 @@
       <form method="post" enctype="multipart/form-data">
         
         <div class="form-wrapper-top">   
-          <div class="foto">
-            <label>Foto Galeri</label>
-            <div class="custom-file-upload">
-              <label for="foto_galeri" class="btn-custom">Masukan Foto Galeri</label>
-              <input type="file" id="foto_galeri" name="foto_galeri" class="form-control">
+          <div class="form-top-left-foto">
+            <div class="display-uploaded-foto">
+              
+            </div>
+          
+            <div class="custom-file-upload-container">            
+              <label for="foto_galeri" class="custom-file-label">Masukan Foto Galeri</label>
+              <input type="file" id="foto_galeri" name="foto_galeri" class="">
             </div>
           </div>
+
 
           <div class="inputs-container">
            <div class="">
@@ -25,7 +29,9 @@
           </div>
         </div>
         
-        <button type="submit" class="btn-bg-yellow mt-3">Simpan</button>
+        <div class="crud-button-container">
+          <button type="submit" class="btn-bg-yellow mt-3">Simpan</button>
+        </div>
       </form>
 
     </div>

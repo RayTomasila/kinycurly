@@ -7,7 +7,7 @@
     
     <!-- Bootstrap & JS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Bootstrap & JS -->
 
     <!-- Fonts -->
@@ -21,7 +21,7 @@
       </link>
 
       <link rel="stylesheet" type="text/css"      
-        href="<?php echo base_url('../public/styles/admin/header.css') ?>">
+        href="<?php echo base_url('../public/styles/admin/sidebar.css') ?>">
       </link>
 
       <link rel="stylesheet" type="text/css" 

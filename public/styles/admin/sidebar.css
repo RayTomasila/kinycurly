@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100%;
+}
+
+.sidebar {
+  z-index: 999;
+  width: 16vw;
+  max-width: 20vw;
+  color: #fff;
+  flex-shrink: 0;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  background-color: var(--primary-color); 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.sidebar ul {
+  padding-left: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sidebar li.nav-item,
+.sidebar li.logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar .admin-akun {
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; 
+  font-weight: 700;
+}
+
+.sidebar .admin-akun img {
+  height: 150px;
+  width: 150px;
+  object-fit: fill;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+
+.sidebar .nav-link {
+  background-color: var(--light-brown);
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  height: 40px;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Highlight when hovering */
+.sidebar .nav-link:hover {
+  background-color: #ffc0429e;
+  color: #fff;
+}
+
+.sidebar .nav-link.active {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+}
+
+
+footer {
+  background-color: #93d56b; 
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
