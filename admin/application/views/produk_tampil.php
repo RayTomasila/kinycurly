@@ -1,7 +1,7 @@
 <!-- Produk -->
 <section class="tampil-container container">
 
-    <p class="section-title">Produk</p>
+    <p class="section-title-tampil">Produk</p>
     
     <div class="card-container custom-scroll">
         <?php foreach ($produk as $key => $value): ?>

@@ -1,8 +1,8 @@
 <section class="crud-container">
   <div class="container crud-wrapper">
 
-    <div class="container-top ">
-      <p class="section-title">Tambah Kontak</p>
+    <div class="container-top">
+      <p class="section-title mb-3">Tambah Kontak</p>
     </div>
 
     <div class="form-container">

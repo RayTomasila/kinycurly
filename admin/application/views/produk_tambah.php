@@ -9,13 +9,17 @@
       <form method="post" enctype="multipart/form-data">
         
         <div class="form-wrapper-top">   
-          <div class="foto">
-            <label>Foto Produk</label>
-            <div class="custom-file-upload">
-              <label for="foto_produk" class="btn-custom">Masukan Foto Produk</label>
-              <input type="file" id="foto_produk" name="foto_produk" class="form-control">
+          <div class="form-top-left-foto">
+            <div class="display-uploaded-foto">
+              <img id="image-preview" src="" alt="Uploaded Image"/>
+            </div>
+          
+            <div class="custom-file-upload-container">            
+              <label for="foto_produk" class="custom-file-label">Masukan Foto Produk</label>
+              <input type="file" id="foto-to-display" name="foto_produk" onchange="previewImage()">
             </div>
           </div>
+    
 
           <div class="inputs-container">
             <div class="">

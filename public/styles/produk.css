@@ -1,7 +1,7 @@
 .produk {
   background-color: var(--primary-color);
   height: auto;
-  padding: 50px 0;
+  padding: 60px 0;
   width: 100%;
   display: flex;
   justify-content: left;
@@ -13,6 +13,8 @@
   font-size: 50px;
   font-weight: 700;
   color: white;
+  margin-bottom: 40px;
+
 }
 
 /* CUSTOM SCROLLBAR */
@@ -37,7 +39,7 @@
 
 
 .produk-grid-container {
-  max-height: 600px;
+  max-height: 800px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 

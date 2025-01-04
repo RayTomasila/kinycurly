@@ -10,13 +10,13 @@
         
         <div class="form-wrapper-top">   
           <div class="form-top-left-foto">
-            <div class="display-uploaded-foto">
-              
+            <div class="display-uploaded-foto-galeri">
+              <img id="image-preview" src="" alt="Uploaded Image"/>
             </div>
           
             <div class="custom-file-upload-container">            
-              <label for="foto_galeri" class="custom-file-label">Masukan Foto Galeri</label>
-              <input type="file" id="foto_galeri" name="foto_galeri" class="">
+              <label for="foto_galeri" class="custom-file-label">Masukan Foto Produk</label>
+              <input type="file" id="foto-to-display" name="foto_galeri" onchange="previewImage()">
             </div>
           </div>
 

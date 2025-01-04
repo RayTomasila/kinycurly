@@ -1,6 +1,6 @@
 <!-- testimoni -->
 <section class="tampil-container container">
-  <p class="section-title">Testimoni</p>
+  <p class="section-title-tampil">Testimoni</p>
   
   <div class="card-container custom-scroll">
       <?php foreach ($testimoni as $key => $value): ?>
