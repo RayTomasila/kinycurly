@@ -49,17 +49,14 @@ ion-icon { pointer-events: none; }
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
   font-family: 'Poppins';
 }
 
 body {
-  font-family: 'Poppins';
-  margin-top: 60px; 
-  overflow-x: hidden;
-}
-
-
+  font-family: 'Poppins', sans-serif;
+  margin-top: 60px;
+  overflow-x: hidden; 
+} 
 
 h1,
 h2,
@@ -81,9 +78,11 @@ ul{
   background-color: var(--secondary-color);
   text-decoration: none;
   border-radius: 40px;
-  font-weight: 500;
+  font-weight: 600;
   color: white;
   width: 340px;
+  box-shadow: 2px 2px 5px rgba(46, 46, 46, 0.159);
+  transition: box-shadow 0.3s ease;
 }
 
 .btn-bg-yellow-landing {
@@ -96,9 +95,9 @@ ul{
   background-color: var(--secondary-color);
   box-shadow: 2px 2px 5px rgba(46, 46, 46, 0.159);
   transition: box-shadow 0.3s ease;
-
 }
 
+.btn-bg-yellow:hover,
 .btn-bg-yellow-landing:hover {
   box-shadow: 2px 2px 7px rgba(46, 46, 46, 0.283);
 }
@@ -135,3 +134,4 @@ ul{
   box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.176);
   color: white;
 }
+

@@ -60,7 +60,7 @@
   <!-- Navbar Section -->
     <nav class="navbar navbar-expand-lg navbar-fixed-top">
       <div class="container">
-        <a href="#beranda" class="navbar-brand">KINICURLY</a>
+        <a href="#beranda" class="navbar-brand">KINI<span>CURLY</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -244,32 +244,60 @@
 
           <div class="footer-top-mid">
             <p class="footer-section-title">Ikuti Kami</p>
-            <ul class="social-media">
-              <li>
-                <a href=""><img src="../public/assets/landing/fb.png" alt="facebook">@KiniCurly</a>
-              </li>
-              <li>
-                <a href=""><img src="../public/assets/landing/gmail.png" alt="Gmail">kiny@gmail.com</a>
-              </li>
-              <li>
-                <a href=""><img src="../public/assets/landing/ig.png" alt="">@kinycurly</a>
-              </li>
-              <li>
-                <a href=""><img src="../public/assets/landing/path.png" alt="">Kinycurly</a>
-              </li>
-              <li>
-                <a href=""><img src="../public/assets/landing/tiktok.png" alt="">kiny_curly</a>
-              </li>
-              <li>
-                <a href=""><img src="../public/assets/landing/wa.png" alt="">085342618391</a>
-              </li>
-            </ul>
+
+            
+            <?php foreach ($kontak as $key => $value): ?>
+              <ul class="social-media">
+                <li>
+                  <?php if (strcasecmp($value['nama_kontak'], 'Facebook') == 0): ?>
+                    <a href="https://facebook.com/<?php echo $value['link_kontak']?>" target="_blank">
+                      <img src="../public/assets/landing/<?php echo $value['nama_kontak'] ?>.png" alt="facebook">
+                      @<?php echo $value['link_kontak']; endif ?>
+                    </a>
+                </li>
+                <li>
+                  <?php if (strcasecmp($value['nama_kontak'], 'Gmail') == 0): ?>
+                    <a href="mailto:<?php echo $value['link_kontak']?>" target="_blank">
+                      <img src="../public/assets/landing/<?php echo $value['nama_kontak'] ?>.png" alt="gmail">
+                      <?php echo $value['link_kontak']; endif ?>
+                    </a>
+                </li>
+                <li>
+                  <?php if (strcasecmp($value['nama_kontak'], 'Instagram') == 0): ?>
+                    <a href=https://instagram.com/<?php echo $value['link_kontak']; ?> target="_blank">
+                      <img src="../public/assets/landing/<?php echo $value['nama_kontak'] ?>.png" alt="instagram">
+                      @<?php echo $value['link_kontak']; endif ?>
+                    </a>
+                </li>
+                <li>
+                  <?php if (strcasecmp($value['nama_kontak'], 'Pinterest') == 0): ?>
+                    <a href="https://pinterest.com/<?php echo $value['link_kontak']; ?>" target="_blank">
+                      <img src="../public/assets/landing/<?php echo $value['nama_kontak'] ?>.png" alt="pinterest">
+                      @<?php echo $value['link_kontak']; endif ?>
+                    </a>
+                </li>
+                <li>
+                  <?php if (strcasecmp($value['nama_kontak'], 'Tik-Tok') == 0): ?>
+                    <a href="https://tiktok.com/@<?php echo $value['link_kontak']; ?>" target="_blank">
+                      <img src="../public/assets/landing/<?php echo $value['nama_kontak'] ?>.png" alt="tik-tok">
+                      <?php echo $value['link_kontak']; endif ?>
+                    </a>
+                </li>
+                <li>
+                  <?php if (strcasecmp($value['nama_kontak'], 'Whatsapp') == 0): ?>
+                    <a href="https://wa.me/<?php echo $value['link_kontak']; ?>" target="_blank">
+                      <img src="../public/assets/landing/<?php echo $value['nama_kontak'] ?>.png" alt="whatsapp">
+                      <?php echo $value['link_kontak']; endif ?>
+                    </a>
+                </li>
+              </ul>
+            <?php endforeach ?>
           </div>
 
           <div class="footer-top-right">
             <p class="footer-section-title">Alamat</p>
             <p class="footer-section-content">jl. Gito gati Ds. Tambakrejo Sariharjo, Ngaglik, Sleman</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.9311276288813!2d110.32377299999999!3d-7.6905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5f05882a520b%3A0x89eff82d75a7d6ac!2sKinycurly!5e0!3m2!1sen!2sid!4v1733279406072!5m2!1sen!2sid" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-3"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.9311276288813!2d110.32377299999999!3d-7.6905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5f05882a520b%3A0x89eff82d75a7d6ac!2sKinycurly!5e0!3m2!1sen!2sid!4v1733279406072!5m2!1sen!2sid" width="300" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-3"></iframe>
           </div>
 
         </div>
@@ -307,6 +335,8 @@
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
   </script>
+   
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">

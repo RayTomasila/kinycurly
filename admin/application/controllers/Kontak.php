@@ -44,4 +44,19 @@
         $this->load->view('kontak_tambah');
         $this->load->view('footer');        
       }
+
+      public function ubah() {
+        $inputan = $this->input->post('kontak');
+      
+        if ($inputan) {
+          foreach ($inputan as $kontak) {
+            $this->Mkontak->ubah($kontak, $kontak['id_kontak']);
+          }
+          $this->session->set_flashdata('pesan_sukses', 'Semua kontak berhasil diubah!');
+          redirect('kontak', 'refresh');
+        } else {
+          $this->session->set_flashdata('pesan_gagal', 'Tidak ada perubahan yang dilakukan.');
+          redirect('kontak', 'refresh');
+        }
+      }
 }

@@ -40,7 +40,7 @@
               </select>
             </div>
 
-            <div class="">
+            <div>
               <label>Nama Produk</label>
               <input type="text" name="nama_produk" class="form-control" value="<?php echo $produk['nama_produk'] ?>"></input>
             </div>

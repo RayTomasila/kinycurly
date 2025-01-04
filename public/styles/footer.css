@@ -64,12 +64,17 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 
 .footer-top .social-media li {
   padding: 0;
-  margin-bottom: 18px;
+}
+
+.footer-top .social-media li {
+  cursor: pointer;
+
 }
 
 .footer-top .social-media img {

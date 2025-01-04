@@ -42,7 +42,6 @@
 			$this->db->where('id_admin', $id_admin);
 			$this->db->update('admin', $inputan);
 
-			$this->db->where('id_admin', $id_admin);
 			$q = $this->db->get('admin');
 			$cekadmin = $q->row_array();
 

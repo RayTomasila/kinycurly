@@ -9,14 +9,14 @@
       <form method="post" enctype="multipart/form-data">
         
         <div class="form-wrapper-top">   
-          <div class="form-top-left-foto">
+        <div class="form-top-left-foto">
             <div class="display-uploaded-foto">
-              
+              <img id="image-preview" src="<?php echo $this->config->item("url_testimoni") . "/default-pfp.jpg"; ?>" alt="Uploaded Image"/>
             </div>
           
             <div class="custom-file-upload-container">            
-              <label for="foto_customer" class="custom-file-label">Masukan Foto Pelanggan</label>
-              <input type="file" id="foto_customer" name="foto_customer" class="">
+              <label for="foto_customer" class="custom-file-label">Masukan Foto Customer</label>
+              <input type="file" id="foto-to-display" name="foto_customer" onchange="previewImage()">
             </div>
           </div>
 

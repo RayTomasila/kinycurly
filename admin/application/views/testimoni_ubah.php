@@ -9,13 +9,13 @@
         <div class="form-wrapper-top">
           <div class="ubah-foto-container">
             <label>Foto </label>
-            <div class="ubah-foto-border">
-              <img src="<?php echo $this->config->item("url_testimoni") . $testimoni['foto_customer']; ?>">
+            <div class="display-uploaded-foto">
+              <img id="image-preview" src="" alt="Uploaded Image"/>
             </div>
 
             <div class="custom-file-edit">
               <label for="foto_testimoni" class="btn-custom">Masukan Foto baru</label>
-              <input type="file" id="foto_testimoni" name="foto_testimoni" class="form-control">
+              <input type="file" id="foto-to-display" name="foto_testimoni" class="form-control">
             </div>
           </div>
 

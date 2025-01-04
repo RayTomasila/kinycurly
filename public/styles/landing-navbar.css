@@ -14,12 +14,27 @@
   letter-spacing: 0.2px;
   font-weight: 500;
   margin: 0;
+  transition: color 0.3s ease;
 }
 
-.navbar-brand {
+.navbar-nav a:hover {
+  color: var(--secondary-color);
+}
+
+.navbar-brand,
+.navbar-brand:hover {
   color: var(--secondary-color);
   font-weight: 700;
   letter-spacing: 0.4px;
   font-family: 'Montserrat';
+}
+
+.navbar-brand span {
+  transition: color 0.3s ease;
+
+}
+
+.navbar-brand:hover span {
+  color: white
 }
 

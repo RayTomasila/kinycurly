@@ -12,10 +12,10 @@
       $this->db->insert('kontak', $inputan);
     }
 
-    function ubah($inputan, $id_kontak) {  
-      $this->db->where('kontak.id_admin', $this->session->userdata("id_admin"));  
+    function ubah($inputan, $id_kontak) {
+      $this->db->where('id_admin', $this->session->userdata("id_admin"));
       $this->db->where('id_kontak', $id_kontak);
       $this->db->update('kontak', $inputan);
-    }  
+    }    
   }
 ?>
