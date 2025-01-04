@@ -1,0 +1,13 @@
+.kontak-container {
+  max-width: 97%;
+}
+
+.label-kontak {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.link-kontak {
+  font-weight: 500;
+  color: var(--primary-color);
+}
